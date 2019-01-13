@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install samba samba-common-bin
+sudo apt-get install samba samba-common-bin -y
 sudo rm -r /etc/samba/smb.conf
 echo "[HOME]
 comment = HOME
