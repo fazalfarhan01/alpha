@@ -6,6 +6,6 @@ echo "deb https://dev2day.de/pms/ jessie main" | sudo tee /etc/apt/sources.list.
 sudo apt-get update
 sudo apt-get install -t jessie plexmediaserver -y
 echo "change user from 'plex' to 'pi'"
-sleep (5)
+sleep 5
 sudo nano /etc/default/plexmediaserver.prev
 sudo service plexmediaserver restart
