@@ -10,7 +10,7 @@ create mask = 0777
 directory mask = 0777
 browseable = Yes
 public = yes
-" sudo tee /etc/samba/smb.conf
+"| sudo tee /etc/samba/smb.conf
 echo "Enter a Password for NAS"
 sudo smbpasswd -a pi
 sudo /etc/init.d/samba restart
