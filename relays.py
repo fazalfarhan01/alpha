@@ -19,7 +19,7 @@ from Adafruit_IO import Client, Feed, RequestError
 # Set to your Adafruit IO key.
 # Remember, your key is a secret,
 # so make sure not to publish it when you publish this code!
-ADAFRUIT_IO_KEY = '93fbd84f59a5d237d69436e1a830eb47247d5e22'
+ADAFRUIT_IO_KEY = '34e4ad43c9ef4cb08402e2a8e44f6912'
 
 # Set to your Adafruit IO username.
 # (go to https://accounts.adafruit.com to find your username)
