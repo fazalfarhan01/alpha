@@ -5,6 +5,6 @@ sudo apt-get install RPi.GPIO -y
 pip3 install RPi.GPIO
 pip3 install adafruit-blinka
 pip3 install adafruit-io
-cd ~/Desktop
+cd
 git clone https://github.com/adafruit/io-client-python.git
 git clone https://github.com/fazalfarhan01/autohome.git
