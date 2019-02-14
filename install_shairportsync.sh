@@ -1,12 +1,12 @@
 sudo apt-get update
 sudo apt-get upgrade -y
-iwconfig wlan0 power off
-apt install build-essential git xmltoman autoconf automake libtool libdaemon-dev libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev
-git clone https://github.com/mikebrady/shairport-sync.git
+sudo iwconfig wlan0 power off
+sudo apt install build-essential git xmltoman autoconf automake libtool libdaemon-dev libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev
+sudo git clone https://github.com/mikebrady/shairport-sync.git
 cd shairport-sync
-autoreconf -fi
-./configure --sysconfdir=/etc --with-alsa --with-avahi --with-ssl=openssl --with-systemd
-make
+sudo autoreconf -fi
+sudo ./configure --sysconfdir=/etc --with-alsa --with-avahi --with-ssl=openssl --with-systemd
+sudo make
 sudo make install
-systemctl enable shairport-sync
-systemctl start shairport-sync
+sudo systemctl enable shairport-sync
+sudo systemctl start shairport-sync
