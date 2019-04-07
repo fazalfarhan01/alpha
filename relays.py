@@ -79,9 +79,9 @@ while True:
         print('received 4 <- OFF\n')
 
     # set the LED to the feed value
-    ledA.value = int(Adata.value)
-    ledB.value = int(Bdata.value)
-    ledC.value = int(Cdata.value)
-    ledD.value = int(Ddata.value)
+    ledA.value = not int(Adata.value)
+    ledB.value = not int(Bdata.value)
+    ledC.value = not int(Cdata.value)
+    ledD.value = not int(Ddata.value)
     # timeout so we dont flood adafruit-io with requests
     time.sleep(1)
