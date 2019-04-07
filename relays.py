@@ -84,4 +84,4 @@ while True:
     ledC.value = not int(Cdata.value)
     ledD.value = not int(Ddata.value)
     # timeout so we dont flood adafruit-io with requests
-    time.sleep(1)
+    time.sleep(0.4)
