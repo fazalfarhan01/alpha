@@ -43,6 +43,11 @@ except RequestError: # create a digital feed
     Crelay = aio.create_feed(Cfeed)
     Dfeed = Feed(name=relay4)
     Drelay = aio.create_feed(Dfeed)
+except KeyboardInterrupt:
+    ledA.value = 1
+    ledB.value = 1
+    ledC.value = 1
+    ledD.value = 1
 
 # relay set up
 ledA = digitalio.DigitalInOut(board.D19)
